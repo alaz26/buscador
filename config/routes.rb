@@ -1,7 +1,7 @@
 Buscador::Application.routes.draw do
   devise_for :users
 
-  root :to => "static_pages#home"
+  root :to => "static_pages#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
