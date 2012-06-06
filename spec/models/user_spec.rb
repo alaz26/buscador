@@ -18,7 +18,7 @@ describe User do
   it { @user.email = ""
        @user.should_not be_valid}
   it { should respond_to(:type)}
-  it { @user.tipo = nil
+  it { @user.type = nil
        @user.should_not be_valid}
   it { should respond_to(:status)}
   it { @user.status = nil
