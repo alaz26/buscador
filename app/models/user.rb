@@ -9,4 +9,10 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :username, :name, :type, :status
   # attr_accessible :title, :body
+  
+  VISITANTE = 3
+  
+  def visitante?
+    self.type == VISITANTE
+  end
 end
